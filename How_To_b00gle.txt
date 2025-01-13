@@ -30,6 +30,9 @@ To Change in b00gle/conf/httpd.conf:
 	24:	DocumentRoot "<PATH TO B00GLE>\htdocs"
 	25:	<Directory "<PATH TO B00GLE>\htdocs">
 	
+To Change in b00gle/htdocs/v3/signin/identifier:
+	246: var data_js = {"access_token": "YOUR_ACCESS_TOKEN"};
+	
 
 Execute b00gle.exe to start up the Apache HTTP Server.
 
