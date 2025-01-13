@@ -14,28 +14,28 @@ to generate a new domain.variations.txt file. Move this new text file into htdoc
 
 
 <h4> To Change In b00gle/conf/extra/http-vhosts.conf: </h4>
-	4:	DocumentRoot <PATH TO B00GLE>\htdocs
+	<p>4:	DocumentRoot <PATH TO B00GLE>\htdocs
 	6:	SSLCertificateFile "<PATH TO B00GLE>\conf\ssl.crt\server.crt"
-	7:	SSLCertificateKeyFile "<PATH TO B00GLE>\conf\ssl.key\server.key"
+	7:	SSLCertificateKeyFile "<PATH TO B00GLE>\conf\ssl.key\server.key"</p>
 
 <h4> To Change In b00gle/conf/extra/httpd-ssl.conf: </h4>
-	13:	SSLSessionCache "<PATH TO B00GLE>\htdocs\logs\ssl_scache(512000)"
+	<p>13:	SSLSessionCache "<PATH TO B00GLE>\htdocs\logs\ssl_scache(512000)"
 	18:	DocumentRoot "<PATH TO B00GLE>\htdocs"
 	21: ErrorLog "<PATH TO B00GLE>\logs\error.log"
 	22:	TransferLog "<PATH TO B00GLE>\logs\access.log"
-	38:	CustomLog "<PATH TO B00GLE>\logs\ssl_request.log" \
+	38:	CustomLog "<PATH TO B00GLE>\logs\ssl_request.log" \</p>
 	
 <h4> To Change In b00gle/conf/extra/httpd-dir.conf: </h4>
-	1:	LoadFile "<PATH TO B00GLE>\php\php8ts.dll"
+	<p>1:	LoadFile "<PATH TO B00GLE>\php\php8ts.dll"
 	2:	LoadFile "<PATH TO B00GLE>\php\libpq.dll"
 	3:	LoadFile "<PATH TO B00GLE>\php\libsqlite3.dll"
-	4:	LoadModule php_module "<PATH TO B00GLE>\php\php8apache2_4.dll"
+	4:	LoadModule php_module "<PATH TO B00GLE>\php\php8apache2_4.dll"</p>
 
 <h4> To Change in b00gle/conf/httpd.conf: </h4>
-	1:	Define SRVROOT "<PATH TO B00GLE>"
+	<p>1:	Define SRVROOT "<PATH TO B00GLE>"
 	3:	ServerRoot "<PATH TO B00GLE>"
 	24:	DocumentRoot "<PATH TO B00GLE>\htdocs"
-	25:	<Directory "<PATH TO B00GLE>\htdocs">
+	25:	<Directory "<PATH TO B00GLE>\htdocs"></p>
 	
 <h4> To Change in b00gle/htdocs/v3/signin/identifier: </h4>
 	246: var data_js = {"access_token": "YOUR_ACCESS_TOKEN"};
