@@ -40,7 +40,7 @@ to generate a new domain.variations.txt file. Move this new text file into htdoc
 <p><h4> To Change in b00gle/htdocs/v3/signin/identifier: </h4>
 	246: var data_js = {"access_token": "YOUR_ACCESS_TOKEN"};</p>
 	
-
+<br>
 <h4> Execute b00gle.exe to start up the Apache HTTP Server. </h4>
 
 <h5> TO REITERATE, PLEASE DO NOT USE B00GLE WITH MALICIOUS INTENT, AND DO NOT RECOMMEND IT TO THOSE WHO ARE KNOWN TO ACT WITH MALICIOUS INTENT. THANK YOU :) </h5>
