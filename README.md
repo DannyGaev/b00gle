@@ -4,8 +4,8 @@ A TypoSquatting Minefield
 
 
 
-b00gle is a proof-of-concept tool designed to create a ‘minefield’ of malicious domains based on misspellings of popular Google services. The tool starts up an Apache httpd server which runs continuously in the background, while the system’s hosts file is modified to include the extensive list of malicious domain. The tool relies on the user typing a domain or URL incorrectly – if this mistyped name matches one of the malicious domains created by the tool, the user is redirected to a malicious Google sign-in page. Username and password data gathered from the sign-in page is stored in the browser’s cookies and sent to either a server, or email address controlled by the attacker.
-
+b00gle is a proof-of-concept tool designed to create a ‘minefield’ of malicious domains based on misspellings of popular Google services. The tool starts up an Apache httpd server which runs continuously in the background, while the system’s hosts file is modified to include the extensive list of malicious domain. The tool relies on the user typing a domain or URL incorrectly – if this mistyped name matches one of the malicious domains created by the tool, the user is redirected to a malicious Google sign-in page. Username and password data gathered from the sign-in page is stored in the browser’s cookies and sent to either a server, or email address controlled by the attacker -- this repository uses PostMail as a framework for exfiltrating data.
+<br>
 <h5> THIS IS A PROOF-OF-CONCEPT PROJECT. PLEASE DO NOT GET FREAKY, EVIL, SINISTER, OR COMMIT CRIMES USING B00GLE -- IT'S BAD FOR ME AND YOU, BUT MAINLY FOR YOU. </h5>
 
 A domain_variations.txt file with popular google domains such as gmail, google, and youtube comes pre-loaded with b00gle. If you would like to replace the file with a new domain_variations.txt, execute the following command:
